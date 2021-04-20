@@ -6,12 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" />
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
     <link rel="sylesheet" href="./style.css">
     <title>Darbu saraksts</title>
 </head>
 <body>
     
-    <script src="./app.js"></script>
-</body>
-</html>
+    <header>
+        <h1>Tavs darbu saraksts</h1>
+    </header>
+    <form>
+        <input type="teksts" class="darbu_ievade" />
+        <button class="jaunsdarbs_poga" type="pievienot">
+            <i class="lni lni-add-files"></i>
+        </button>
+        
+        <div class="select">
+          <select name="darbi" class="darbi_filtrs">
+            <option value="visi">Visi</option>
+            <option value="pabeigti">Completed</option>
+            <option value="nepabeigti">Uncompleted</option>
+          </select>
+        </div>
+      </form>
+      
+      <div class="darbi_containeris">
+        <ul class="darbu_saraksts"></ul>
+      </div>
+  
+      <script src="./app.js"></script>
+    </body>
+  </html>
+  
+
